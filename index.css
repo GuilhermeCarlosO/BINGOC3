@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24vh;
+    background-color: #800080; /* Roxo para o header */
+    border-bottom: 2px solid #000; /* Linha abaixo do header em preto */
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+main section#cartelas {
+    width: 70%;
+    height: 76vh;
+    background-color: #fff; /* Branco para as cartelas, exceto "Bingo" */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 2px solid #000; /* Linha vertical à direita em preto */
+    padding-right: 20px; /* Espaçamento à direita para destacar */
+}
+
+main section#numeros {
+    width: 30%;
+    height: 76vh;
+    background-color: #fff; /* Branco para os números */
+    display: flex;
+    flex-direction: column; /* Alterado para empilhar os itens verticalmente */
+    justify-content: center;
+    align-items: center; /* Centralizar conteúdo verticalmente e horizontalmente */
+    border-left: 2px solid #000; /* Linha vertical à esquerda em preto */
+}
+
+section#cartelas div {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border-bottom: 2px solid #000; /* Linha horizontal entre as cartelas em preto */
+    padding-bottom: 10px; /* Espaçamento abaixo para destacar */
+}
+
+section#cartelas div table {
+    width: 100%;
+}
+
+section#cartelas div table tr {
+    display: flex;
+}
+
+section#cartelas div table td {
+    flex: 1;
+    text-align: center;
+    padding: 3px; /* Ajustado o espaçamento interno dos números */
+}
+
+button {
+    height: 30px;
+    width: 120px;
+    margin-top: 10px; /* Adicionado espaçamento acima do botão */
+}
+
+section#numeros h2 {
+    margin-top: 20px;
+    margin-bottom: 20px; /* Adicionado espaço abaixo do título */
+}
+
+section#cartelas h1 {
+    border-bottom: 2px solid #000; /* Linha abaixo do título "Bingo" em preto */
+    padding-bottom: 10px; /* Espaçamento abaixo para destacar */
+    color: #fff; /* Cor do texto branco */
+    text-shadow: 2px 2px 4px #000; /* Efeito de sombra no texto */
+    background-color: #800080; /* Roxo para o setor "Bingo" */
+}
+
+section#numeros {
+    background-color: #fff; /* Branco para os números */
+}
